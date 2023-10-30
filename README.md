@@ -1,24 +1,21 @@
-# README
+# Projeto Anki
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pré-requisitos
 
-Things you may want to cover:
+Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina. Para informações sobre como instalar, visite: [Docker Installation](https://docs.docker.com/get-docker/)
 
-* Ruby version
+## Iniciando a API
 
-* System dependencies
+1. Clone este repositório para sua máquina local:
 
-* Configuration
+```bash
+git clone https://github.com/LeandroGelain/AnkiProject-API
+cd AnkiProject-API
+```
 
-* Database creation
+2. Inicializando o projeto
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+docker network create anki-network
+docker compose up
+```
